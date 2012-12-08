@@ -1,0 +1,24 @@
+{
+  "name": "wintersmith-bootstrap",
+  "version": "0.0.1",
+  "description": "Wintersmith Bootstrap Template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/venil7/wintersmith-bootstrap"
+  },
+  "scripts":  {
+    "start": "Wintersmith preview"
+  },
+  "dependencies": {
+    "wintersmith":"1.1.1"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "author": "DarkRuby.co.uk",
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}
