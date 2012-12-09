@@ -3,23 +3,7 @@ html
   include partials/header
 
   body
-    div.navbar.navbar-fixed-top
-      div.navbar-inner
-        div.container
-          a(data-toggle='collapse', data-target='.nav-collapse').btn.btn-navbar
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a(href='#').brand wintersmith-bootstrap
-          ul.nav
-            - var obj = { 'index':{'title':'Home','url':'/'}, 'about':{'title':'About','url':'/about.html'} }
-              - each val, key in obj
-                - if (page.metadata.id == key)
-                  li.active
-                    a(href= val.url) #{val.title}
-                - else            
-                  li
-                    a(href= val.url) #{val.title}
+    include partials/menu
     div.container!= page.html
       <hr />
       include partials/footer
