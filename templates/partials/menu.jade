@@ -7,7 +7,7 @@ div.navbar.navbar-fixed-top
             span.icon-bar
           a(href='#').brand wintersmith-bootstrap
           ul.nav
-            - var menu_items = _.chain(contents._.pages).map(function(v){return {'url':v.url, 'title':v.metadata.menu};}).value();
+            - var menu_items = _.chain(contents._.pages).map(function(v){return {'url':v.url, 'title':v.metadata.menu};}).sortBy('url').value();
               - each item in menu_items
                 - if (page.metadata.menu == item.title)
                   li.active
