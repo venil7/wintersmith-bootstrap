@@ -12,16 +12,16 @@ html
             span.icon-bar
           a(href='#').brand wintersmith-bootstrap
           ul.nav
-            - var obj = { 'index':'Home', 'about':'About' }
+            - var obj = { 'index':{'title':'Home','url':'/'}, 'about':{'title':'About','url':'/about.html'} }
               - each val, key in obj
                 - if (page.metadata.id == key)
                   li.active
-                    a(href='#{key}.html') #{val}
+                    a(href= val.url) #{val.title}
                 - else            
                   li
-                    a(href='#{key}.html') #{val}
-
+                    a(href= val.url) #{val.title}
     div.container!= page.html
+      <hr />
       include partials/footer
   
     include partials/scripts
