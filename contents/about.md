@@ -1,6 +1,6 @@
 title: About
 template: layout.jade
-id: about
+menu: About
 
 ## about
 

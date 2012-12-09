@@ -7,11 +7,11 @@ div.navbar.navbar-fixed-top
             span.icon-bar
           a(href='#').brand wintersmith-bootstrap
           ul.nav
-            - var obj = { 'index':{'title':'Home','url':'/'}, 'about':{'title':'About','url':'/about.html'} }
-              - each val, key in obj
-                - if (page.metadata.id == key)
+            - var menu_items = _.chain(contents._.pages).map(function(v){return {'url':v.url, 'title':v.metadata.menu};}).value();
+              - each item in menu_items
+                - if (page.metadata.menu == item.title)
                   li.active
-                    a(href= val.url) #{val.title}
+                    a(href= item.url) #{item.title}
                 - else            
                   li
-                    a(href= val.url) #{val.title}
+                    a(href= item.url) #{item.title}

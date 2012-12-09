@@ -1,6 +1,6 @@
 title: Home
 template: layout.jade
-id: index
+menu: Home
 
 ## Bootstrap template  
 ## for wintersmith
