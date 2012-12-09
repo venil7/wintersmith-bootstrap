@@ -4,8 +4,9 @@ html
 
   body
     include partials/menu
-    div.container!= page.html
+    div.container
+      block content
       <hr />
       include partials/footer
-  
+
     include partials/scripts

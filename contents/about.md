@@ -1,8 +1,6 @@
 title: About
-template: layout.jade
+template: article.jade
 menu: About
-
-## about
 
 #### this template is possible thanks to
 * [wintersmith](https://github.com/jnordberg/wintersmith)

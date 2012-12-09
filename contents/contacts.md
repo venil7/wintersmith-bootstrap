@@ -1,7 +1,5 @@
 title: Contacts
-template: layout.jade
+template: article.jade
 menu: Contacts
-
-## Contacts
 
 follow us on [twitter](https://twitter.com/)
