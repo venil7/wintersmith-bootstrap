@@ -1,7 +1,9 @@
 ---
 title: Bootstrap Template for Wintersmith
 template: article.jade
-menu: Home
+menu:
+  title: Home
+  order: 0
 ---
 
 `Lorem ipsum` dolor sit amet, consectetur adipisicing elit, sed do eiusmod

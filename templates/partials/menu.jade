@@ -5,13 +5,13 @@ div.navbar.navbar-fixed-top
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a(href='#').brand wintersmith-bootstrap
+          a(href='/').brand= locals.title
           ul.nav
-            - var menu_items = _.chain(contents._.pages).map(function(v){return {'url':v.url, 'title':v.metadata.menu};}).sortBy('url').value();
+            - var menu_items = _.chain(contents._.pages).sortBy(function(v){return v.metadata.menu.order}).value();
               - each item in menu_items
-                - if (page.metadata.menu == item.title)
+                - if (page.metadata.menu.title == item.metadata.menu.title)
                   li.active
-                    a(href= item.url) #{item.title}
+                    a(href= item.url) #{item.metadata.menu.title}
                 - else            
                   li
-                    a(href= item.url) #{item.title}
+                    a(href= item.url) #{item.metadata.menu.title}

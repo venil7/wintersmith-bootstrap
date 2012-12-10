@@ -1,7 +1,9 @@
 ---
 title: About
 template: article.jade
-menu: About
+menu: 
+  title: About
+  order: 2
 ---
 
 #### this template is possible thanks to
