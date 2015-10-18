@@ -14,4 +14,4 @@ browse to `localhost:8080` and start editing
 `wintersmith build` to get the output to `./build/`
 
 ## thanks
-<a target="_new" href="https://twitter.com/artem82" class="twitter-follow-button" data-show-count="false">Follow me @artem82</a>
+<a target="_new" href="https://twitter.com/darkest_ruby" class="twitter-follow-button" data-show-count="false">Follow me @darkest_ruby</a>
